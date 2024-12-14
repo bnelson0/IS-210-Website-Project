@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .resume-section {
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .scratch-section {
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Professional Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scratch">Steelers Page</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section">
+        <h2>Resume</h2>
+        <h3>Education</h3>
+        <p>Example University, Bachelor of Science in Computer Science</p>
+        <h3>Experience</h3>
+        <ul>
+            <li>Software Developer Intern - XYZ Corporation</li>
+            <li>Research Assistant - Example University</li>
+        </ul>
+        <h3>Leadership & Service</h3>
+        <ul>
+            <li>President - University Coding Club</li>
+            <li>Volunteer - Local Community Center</li>
+        </ul>
+        <h3>Awards & Skills</h3>
+        <ul>
+            <li>Dean's List (4 semesters)</li>
+            <li>Proficient in JavaScript, Python, and SQL</li>
+        </ul>
+    </section>
+
+    <!-- Scratch Page -->
+    <section id="scratch" class="scratch-section">
+        <h2>Pittsburgh Steelers</h2>
+        <h3>About the Steelers</h3>
+        <p>The Pittsburgh Steelers are a professional football team based in Pittsburgh, Pennsylvania.</p>
+
+        <h4>Why I like the Steelers</h4>
+        <ul>
+            <li>Rich history in the NFL</li>
+            <li>Passionate fan base</li>
+        </ul>
+
+        <h4>Recent Accomplishments</h4>
+        <ol>
+            <li>2023 Playoffs appearance</li>
+            <li>Strong defense in 2024</li>
+        </ol>
+
+        <h4>Media</h4>
+        <img src="data:image/png;base64,/* Steelers logo base64 */" alt="Steelers Logo" style="max-width:100%;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/some_video_id" title="YouTube video" allowfullscreen></iframe>
+
+        <h4>Steelers Tableau Visualization</h4>
+        <iframe src="https://public.tableau.com/views/example_tableau_id" width="100%" height="400"></iframe>
+
+        <h4>Fun Web App</h4>
+        <div id="app"></div>
+    </section>
+
+    <footer>
+        &copy; 2024 My Professional Website
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Example of a small web app
+        const app = document.getElementById('app');
+        const button = document.createElement('button');
+        button.textContent = 'Click for a random joke';
+        button.onclick = () => {
+            const jokes = [
+                'Why don\'t skeletons fight each other? They don\'t have the guts.',
+                'What do you call cheese that isn\'t yours? Nacho cheese.',
+                'Why couldn\'t the bicycle stand up by itself? It was two tired.'
+            ];
+            alert(jokes[Math.floor(Math.random() * jokes.length)]);
+        };
+        app.appendChild(button);
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
